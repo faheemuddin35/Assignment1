@@ -16,12 +16,19 @@ Route::get('/', function () {
 });
 
 
-Route::get(pro', function () {
-    $name='Mohammed';
-	return view('pro/welcome', compact('name'));
-});
+
+Route::get('/business', function () {
+    return view('pro.business');
+})->name('business');
 
 
 
+Route::get('/register, function () {
+    return view('pro.register');
+	
+})->name('registr');; 
+
+
+Route::get('user/{id}', 'ShowProfile');
 
 
